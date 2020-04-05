@@ -1,308 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-
-  <title>x2y2 - pythoner,golanger,I like Linux</title>
-
-  <meta name="author" content="x2y2" />
-
-  
-  <meta name="description" content="Write Down Something About Tech">
-  
-
-  <link rel="alternate" type="application/rss+xml" title="x2y2 - pythoner,golanger,I like Linux" href="http://localhost:4000/feed.xml" />
-
-<!--   
-
-  
-
-  
- -->
-
-  
-    
-      
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
-
-
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    
-      <link rel="stylesheet" href="/css/bootstrap-social.css" />
-    
-      <link rel="stylesheet" href="/css/main.css" />
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    
-  
-
-  
-
-  
-
-  
-
-    <!-- Facebook OpenGraph tags -->
-  
-
-  
-  <meta property="og:title" content="X2y2 Write Here" />
-  
-
-   
-  <meta property="og:description" content="Write Down Something About Tech">
-  
-
-
-  <meta property="og:type" content="website" />
-
-  
-  <meta property="og:url" content="http://localhost:4000/" />
-  <link rel="canonical" href="http://localhost:4000/" />
-  
-
-  
-  <meta property="og:image" content="http://localhost:4000/img/avatar-icon.png" />
-  
-
-
-  <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@" />
-  <meta name="twitter:creator" content="@" />
-
-  
-  <meta name="twitter:title" content="X2y2 Write Here" />
-  
-
-  
-  <meta name="twitter:description" content="Write Down Something About Tech">
-  
-
-  
-  <meta name="twitter:image" content="http://localhost:4000/img/avatar-icon.png" />
-  
-
-  
-
-  
-
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x2y2 Write Here</title>
+    <meta name="author"  content="x2y2">
+    <meta name="description" content="Write Down Something About Tech">
+    <meta name="keywords"  content="python,golang,linux">
+    <!-- Open Graph -->
+    <meta property="og:title" content="x2y2 Write Here">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/">
+    <meta property="og:description" content="Write Down Something About Tech">
+    <meta property="og:site_name" content="x2y2 Write Here">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_271755_rdxzzo2kqwk.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-
-  <body>
-
-    
-
-  
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button><a class="navbar-brand" href="http://localhost:4000/">x2y2</a></div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="/aboutme">About Me</a></li>
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">Resources</a>
-            <div class="navlinks-children">
-              <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
-              <a href="http://www.markdowntutorial.com/">Learn markdown</a>
-            </div>
-          </li>
+<body>
+    <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+    <input id="nm-switch" type="hidden" value="false">
+    <div class="visible">
+      <header class="g-header">
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            
+            <li><a href="/">home</a></li>
+            
+            <li><a href="/tags.html">tags</a></li>
+            
         </ul>
-    </div>
-
-	
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="http://localhost:4000/">
-	      <img class="avatar-img" src="/img/avatar-icon.png" />
-		</a>
-	  </div>
-	</div>
-	
-
-  </div>
-</nav>
-
-
-    <!-- TODO this file has become a mess, refactor it -->
-
-
-
-
-
-<header class="header-section ">
-
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-heading">
-          <h1>X2y2 Write Here</h1>
-		  
-		    
-            <hr class="small">
-            <span class="page-subheading">Write Down Something About Tech</span>
-			
-		  
-		  
-		  
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </nav>
 </header>
 
 
-
-
-
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div class="posts-list">
-  
-  <article class="post-preview">
-    <a href="/2020-04-05-go-readfile/">
-	  <h2 class="post-title">go读文件的几种方式</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on April 5, 2020
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        在golang中读本地文件有很多种方式，本文总结下常用的几种方式
-
-
-        
-        
-          <a href="/2020-04-05-go-readfile/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tags#golang">golang</a>
-      
-      <a href="/tags#readfile">readfile</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
+<div
+    class="g-banner home-banner banner-theme-default"
+    data-theme="default"
+    style=""
+>
+    <h2>x2y2 Write Here</h2>
+    <h3>Write Down Something About Tech OR Life</h3>
 </div>
 
+<main class="g-container home-content">
+    <div class="article-list">
+        
+            <article class="article-item">
+                
+                <div class="post-cover">
+                    <a class="post-link" href="/2020/04/05/go-readfile.html" title="go读文件的几种方式"></a>
+                    <img src="/assets/img/path.jpg" href="/2020/04/05/go-readfile.html" alt="">
+                </div>
+                
+                <section class="post-preview">
+                    <a class="post-link" href="/2020/04/05/go-readfile.html" title="go读文件的几种方式"></a>
+                    <h2 class="post-title">go读文件的几种方式</h2>
+                    
+                    
+                    <p class="post-excerpt">  在golang中读本地文件有很多种方式，总结下常用的几种方式</p>
+                    
+                </section>
+                <footer class="post-meta">
+                    <div class="post-tags">
+                        
+                            
+                            <a href=/tags.html#go class="post-tag">go</a>
+                            
+                            <a href=/tags.html#readfile class="post-tag">readfile</a>
+                            
+                        
+                    </div>
+                    <time class="post-date" datetime="20-04-05">05 Apr 2020</time>
+                </footer>
+            </article>
+        
 
+        
 
-	  
     </div>
-  </div>
-</div>
 
+    <aside class="g-sidebar-wrapper">
+        <div class="g-sidebar">
+            <section class="author-card">
+                <div class="avatar">
+                    <img src="/assets/img/profile.png" alt="">
+                </div>
+                <div class="author-name" rel="author">x2y2</div>
+                <div class="bio">
+                    <p>爱生活，爱技术，关注python,golang,linux</p>
+                </div>
+                
+                <ul id="sns-links" class="sns-links">
+                    
+                    <li>
+                        <a href="//github.com/x2y2" target="_blank">
+                            <i class="iconfont icon-github"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </section>
 
-    <footer>
-  <div class="container beautiful-jekyll-footer">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-inline text-center footer-links"><li>
-              <a href="/feed.xml" title="RSS">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-                </span>
-                <span class="sr-only">RSS</span>
-              </a>
-            </li><li>
-              <a href="mailto:wangpei456@126.com" title="Email me">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                </span>
-                <span class="sr-only">Email me</span>
-              </a>
-            </li></ul>
-      <p class="copyright text-muted">
-      x2y2
-      &nbsp;&bull;&nbsp;
-      2020
+            
+            <section class="tags-card">
+                
+                    
+                    <a href="/tags.html#go" class="tag">go</a>
+                
+                    
+                    <a href="/tags.html#readfile" class="tag">readfile</a>
+                
+            </section>
+            
+        </div>
 
-      
+        
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </div>
+        
 
-      
-      </p>
-          <!-- Please don't remove this, keep my open source work credited :) -->
-    <!-- <p class="theme-by text-muted">
-      Theme by
-      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    </p> -->
-      </div>
-    </div>
-  </div>
+    </aside>
+
+</main>
+
+<footer class="g-footer">
+  <section>x2y2 Write Here ©
+  
+  
+    2017
+    -
+  
+  2020
+  </section>
+  <section>Powered by<a href="https://github.com/x2y2"> x2y2</a></section>
 </footer>
 
-  
-    
 
-
-  
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-      <script>
-      	if (typeof jQuery == 'undefined') {
-          document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
-      	}
-      </script>
-    
-  
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-      <script src="/js/bootstrap.min.js"></script>
-    
-  
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-      <script src="/js/main.js"></script>
-    
-  
-
-
-
-
-
-
-  
-  </body>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script>
+</body>
 </html>

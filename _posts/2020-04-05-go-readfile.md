@@ -1,15 +1,16 @@
 ---
 layout: post
 title: go读文件的几种方式
-<!-- subtitle:  -->
-bigimg: /img/path.jpg
-tags: [golang,readfile]
-comments: true
+<!-- subtitle: -->
+date: 2020-04-05
+categories: Go
+cover: 'assets/img/path.jpg'
+tags: go readfile 
 ---
 
-在golang中读本地文件有很多种方式，本文总结下常用的几种方式
+> 在golang中读本地文件有很多种方式，总结下常用的几种方式
 
-### 1. Read一次读取若干字节
+#### 1. Read一次读取若干字节
 ```
 package main
 
@@ -41,7 +42,7 @@ func main(){
     }
 }
 ```
-### 2. NewScanner逐行读
+#### 2. NewScanner逐行读
 ```
 package main
 
@@ -75,7 +76,7 @@ func main(){
      }
 }
 ```
-### 3. 协程并发读
+#### 3. 协程并发读
 ```
 package main
 
