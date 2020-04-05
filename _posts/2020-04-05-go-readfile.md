@@ -2,8 +2,6 @@
 layout: post
 title: go读文件的几种方式
 <!-- subtitle:  -->
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 bigimg: /img/path.jpg
 tags: [golang,readfile]
 comments: true
