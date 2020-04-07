@@ -38,7 +38,9 @@ nightMode: false
 # Comments 评论功能
 comments:
   disqus: true
-  disqus_url: 'https://disqus.com/home/forums/x2y2'
+  disqus_shortname: x2y2
+  disqus_url: 'https://x2y2.github.io/embed.js'
+  # disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
