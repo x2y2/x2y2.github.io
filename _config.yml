@@ -39,8 +39,7 @@ nightMode: false
 comments:
   disqus: true
   disqus_shortname: x2y2
-  disqus_url: 'https://x2y2.github.io/embed.js'
-  # disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  disqus_url: 'https://github.com/x2y2/x2y2.github.io/blob/master/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
