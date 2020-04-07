@@ -2,3 +2,5 @@
 */.DS_Store
 .git/
 _site/
+Gemfile
+Gemfile.lock
