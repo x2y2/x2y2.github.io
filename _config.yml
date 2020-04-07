@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'x2y2 Write Here'
+title: 'x2y2 Writes Here'
 description: 'Write Down Something About Tech'
 keyword: 'python,golang,linux'
 url: '' # your host
@@ -38,7 +38,7 @@ nightMode: false
 # Comments 评论功能
 comments:
   disqus: true
-  shortname: x2y2
+  shortname: x2y2 Writes Here
   disqus_url: 'https://x2y2.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
