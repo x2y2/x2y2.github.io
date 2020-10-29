@@ -211,7 +211,7 @@ admin证书用于管理员操作kubernetes集群时的验证，O值为system:mas
 
 
 ![1](https://github.com/x2y2/x2y2.github.io/blob/master/assets/img/20201029-1.png?raw=true)
-![1](https://github.com/x2y2/x2y2.github.io/blob/master/assets/img/20201029-2.png?raw=true)
+![2](https://github.com/x2y2/x2y2.github.io/blob/master/assets/img/20201029-2.png?raw=true)
 
 ```
 cat > /tmp/cert/admin.json<<EOF
@@ -451,3 +451,9 @@ openssl genrsa -out sa.key 1024
 openssl rsa -in sa.key -pubout -out sa.pub
 cp sa.* /etc/kubernetes/pki
 ```
+
+#### 证书有效期查看
+用kubeadm搭建的kubernetes证书的有效期默认是一年，在证书过期之前要重新签发证书或是延长有效期，如何查看证书有效期，可以用openssl命令
+openssl x509 -in  ca.crt -noout -dates
+![cert-expiry](https://github.com/x2y2/x2y2.github.io/blob/master/assets/img/cert-expiry.png?raw=true)
+可以看到ca.crt 的有效时间为10年
