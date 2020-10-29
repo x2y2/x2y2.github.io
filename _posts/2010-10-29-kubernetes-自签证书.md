@@ -236,7 +236,7 @@ cfssl gencert -ca=ca.crt -ca-key=ca.key -config=config.json -profile=kubernetes 
 rm -f admin.csr admin.json
 cp admin.* /etc/kubernetes/pki
 ```
-将admin.crt,admin.key 复制到etcd集群对应的目录下
+将admin.crt,admin.key 复制到kubernetes集群对应的目录下
 
 #### 5 apiserver证书
 用于apiserver TLS验证
