@@ -453,7 +453,7 @@ cp sa.* /etc/kubernetes/pki
 ```
 
 #### 证书有效期查看
-用kubeadm搭建的kubernetes证书的有效期默认是一年，在证书过期之前要重新签发证书或是延长有效期，如何查看证书有效期，可以用openssl命令
+用kubeadm搭建的kubernetes证书的有效期默认是一年，在证书过期之前要重新签发证书或是延长有效期，如何查看证书有效期，可以用openssl命令<br>
 openssl x509 -in  ca.crt -noout -dates
 ![cert-expiry](https://github.com/x2y2/x2y2.github.io/blob/master/assets/img/cert-expiry.png?raw=true)
 可以看到ca.crt 的有效时间为10年
