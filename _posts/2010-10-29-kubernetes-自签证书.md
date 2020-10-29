@@ -70,7 +70,10 @@ cat >/tmp/cert/csr.json<<EOF
             "O": "k8s",
             "OU": "System"
         }
-    ]
+    ],
+    "ca": {
+        "expiry": "87600h"
+    }
 }
 EOF
 ```
